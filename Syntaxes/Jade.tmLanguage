@@ -39,7 +39,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>([a-zA-Z_-]+)\s*(\:|\=)\s*(?!\/)</string>
+					<string>([a-zA-Z0-9_-]+)\s*(\:|\=)\s*(?!\/)</string>
 				</dict>
 				<dict>
 					<key>begin</key>
