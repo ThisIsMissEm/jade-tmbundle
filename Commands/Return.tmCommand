@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+line = ENV['TM_CURRENT_LINE']
+col = ENV['TM_LINE_INDEX'].to_i
+
+m = /^([ ]+\|[ ]*)/.match line
+
+if m and col &gt;= m[1].length
+  $stdout.write "\n#{m[1]}"
+else
+  $stdout.write "\n"
+end
+
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string></string>
+	<key>name</key>
+	<string>Return</string>
+	<key>output</key>
+	<string>afterSelectedText</string>
+	<key>scope</key>
+	<string>source.jade</string>
+	<key>uuid</key>
+	<string>45F19BDD-2A4D-4848-83D5-E5F1A7FF4726</string>
+</dict>
+</plist>
