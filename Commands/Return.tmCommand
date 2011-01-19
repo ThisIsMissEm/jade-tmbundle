@@ -20,7 +20,7 @@ end
 
 </string>
 	<key>input</key>
-	<string>selection</string>
+	<string>none</string>
 	<key>keyEquivalent</key>
 	<string></string>
 	<key>name</key>
