@@ -15,7 +15,7 @@ m = /^([ ]+\|[ ]*)/.match line
 if m and col &gt;= m[1].length
   $stdout.write "\n#{m[1]}"
 else
-  $stdout.write "\n"
+  $stdout.write "\n" + /^([ ]*)/.match(line)[1]
 end
 
 </string>
