@@ -20,9 +20,9 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>^(!!!)\s*([a-zA-Z0-9-_]+)</string>
+			<string>^(!!!)(\s*[a-zA-Z0-9-_]+)?</string>
 			<key>name</key>
-			<string>text.plain.jade</string>
+			<string>keyword.other.doctype.jade</string>
 		</dict>
 		<!--
 		<dict>
