@@ -6,6 +6,8 @@
 	<array>
 		<string>jade</string>
 	</array>
+	<key>keyEquivalent</key>
+	<string>^~J</string>
 	<key>name</key>
 	<string>Jade</string>
 	<key>patterns</key>
