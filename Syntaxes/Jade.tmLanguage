@@ -28,78 +28,35 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*</string>
+			<string>^\s*(?:(([\w:]+))|(?=\.|#))</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>meta.tag.jade</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.jade</string>
+				</dict>
+			</dict>
 			<key>end</key>
-			<string>(\s+|$)</string>
+			<string>$|(?!\.|#|=|-)</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\.[a-zA-Z0-9_-]+</string>
+					<string>\.[\w-]+</string>
 					<key>name</key>
-					<string>entity.other.attribute-name.class.jade</string>
+					<string>entity.name.tag.class.jade</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>#[a-zA-Z0-9_-]+</string>
+					<string>#[\w-]+</string>
 					<key>name</key>
-					<string>entity.other.attribute-name.id.jade</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>[a-zA-z]</string>
-					<key>name</key>
-					<string>entity.name.tag.jade</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\:.+$</string>
-					<key>name</key>
-					<string>support.class.jade</string>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>(=|-)\s+</string>
-					<key>end</key>
-					<string>$</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>source.js</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>\(</string>
-					<key>end</key>
-					<string>\)</string>
-					<key>name</key>
-					<string>punctuation.definition.prolog.jade</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#string-double-quoted</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#string-single-quoted</string>
-						</dict>
-						<dict>
-							<key>captures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>constant.language.jade</string>
-								</dict>
-							</dict>
-							<key>match</key>
-							<string>([a-zA-Z0-9_-]+)\s*(\:|\=)\s*(?!\/)</string>
-						</dict>
-					</array>
+					<string>entity.name.tag.id.jade</string>
 				</dict>
 			</array>
 		</dict>
