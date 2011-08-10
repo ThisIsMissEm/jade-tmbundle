@@ -13,6 +13,18 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.import.include.jade</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*\b(include)\b</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>^(!!!)(\s*[a-zA-Z0-9-_]+)?</string>
 			<key>name</key>
