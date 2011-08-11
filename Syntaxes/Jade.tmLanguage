@@ -51,6 +51,12 @@
 					<key>include</key>
 					<string>source.js</string>
 				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(each)\b</string>
+					<key>name</key>
+					<string>keyword.control.js</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
