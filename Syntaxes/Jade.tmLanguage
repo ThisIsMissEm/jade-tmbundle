@@ -90,6 +90,12 @@
 			</array>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>[#!]\{[^\}]+\}</string>
+			<key>name</key>
+			<string>string.interpolated.jade</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>^\s*(?:(([\w:]+))|(?=\.|#))</string>
 			<key>captures</key>
@@ -137,12 +143,6 @@
 					<string>#tag-stuff</string>
 				</dict>
 			</array>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>#\{[^\}]+\}</string>
-			<key>name</key>
-			<string>string.interpolated.jade</string>
 		</dict>
 	</array>
 	<key>repository</key>
