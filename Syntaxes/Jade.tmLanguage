@@ -167,7 +167,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\(</string>
+			<string>(?&lt;=\w)\s*\(</string>
 			<key>end</key>
 			<string>\)</string>
 			<key>name</key>
