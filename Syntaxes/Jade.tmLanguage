@@ -61,6 +61,12 @@
 			<string>comment.block.jade</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>^\s*\:(sass|less|markdown|cdata|coffeescript)</string>
+			<key>name</key>
+			<string>support.other.filter.jade</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>^\s*(-|=|!=)</string>
 			<key>end</key>
@@ -125,7 +131,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(?:(([\w:]+))|(?=\.|#))</string>
+			<string>^\s*(?!\w+\:)(?:(([\w]+))|(?=\.|#))</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -139,6 +145,8 @@
 					<string>entity.name.tag.jade</string>
 				</dict>
 			</dict>
+			<key>comment</key>
+			<string>Match any tag, id or class. skip AST filters</string>
 			<key>end</key>
 			<string>$|(?!\.|#|=|-)</string>
 			<key>patterns</key>
