@@ -67,6 +67,63 @@
 			<string>support.other.filter.jade</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.function.jade</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.jade</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.begin.jade</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.function.jade</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.end.jade</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>match stuff like: mixin dialog-title-desc(title, desc)</string>
+			<key>match</key>
+			<string>^\s*(mixin) ([\w\-]+)\s*(\()(.*?)(\))</string>
+			<key>name</key>
+			<string>meta.mixin.jade</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.function.jade</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.jade</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>match stuff like: mixin dialog-title-desc</string>
+			<key>match</key>
+			<string>^\s*(mixin) ([\w\-]+)</string>
+			<key>name</key>
+			<string>meta.mixin.jade</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>^\s*(-|=|!=)</string>
 			<key>end</key>
