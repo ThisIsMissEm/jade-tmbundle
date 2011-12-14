@@ -1,3 +1,8 @@
+Notice:
+---------------------
+
+This bundle is no longer actively maintained by @miksago, any changes or patches should CC @tjholowaychuk, who now maintains this bundle.
+
 Jade.tmbundle
 ---------------------
 
